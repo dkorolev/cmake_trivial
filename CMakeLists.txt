@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 3.14.1)
 
 project(cmake_order C CXX)
 
-set(CMAKE_POSITION_INDEPENDENT_CODE ON)
-
 set(objects "")
 
 add_library(foo.o OBJECT "foo.cc")
