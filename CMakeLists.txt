@@ -13,5 +13,6 @@ list(APPEND objects "main.o")
 
 message(STATUS "CMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}")
 
-add_executable(dummy "dummy.cc")
+write_file("${CMAKE_BINARY_DIR}/dummy.cc" "")
+add_executable(dummy "${CMAKE_BINARY_DIR}/dummy.cc")
 target_link_libraries(dummy ${objects})
